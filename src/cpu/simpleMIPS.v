@@ -4,14 +4,13 @@ module simpleMIPS (
 );
 
 wire [31:0] pc_add4, instr;
-wire Br, J, PCWr;
-wire [25:0] JImm;
+wire Br, J;
+wire [25:0] JImm = instr`SEG_ADDR;
 fetch U_fetch(
   .rst(rst),
   .clk(clk),
   .Br(Br),
   .J(J),
-  .PCWr(PCWr),
   .Imm(JImm),
   .instr(instr),
   .pc_add4(pc_add4)
@@ -52,7 +51,6 @@ ctrl U_ctrl(
   .Brlt(Brlt),
   .RegWr(RegWr),
   .DMWr(DMWr),
-  .PCWr(PCWr),
   .Br(Br),
   .J(J),
   .BSel(BSel),

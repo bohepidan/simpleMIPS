@@ -13,7 +13,7 @@ wire[4:0] rt =    instr`SEG_RT;
 wire[4:0] rd =    instr`SEG_RD;
 wire[15:0] imm =  instr`SEG_IMM;
 
-reg [4:0] rf_rs1, rf_rs2, rf_rd;
+reg [4:0]  rf_rd;
 reg [31:0] rf_wd;
 
 always @(*) begin
@@ -42,8 +42,8 @@ regfile rf(
   .clk(clk),
   .rst,
   .RegWr(RegWr),
-  .rs1(rf_rs1),
-  .rs2(rf_rs2),
+  .rs1(rs),
+  .rs2(rt),
   .rd(rf_rd),
   .wdata(rf_wd),
   .rdata1(rdata1),

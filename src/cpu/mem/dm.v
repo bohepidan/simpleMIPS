@@ -6,7 +6,7 @@ module dm(
   output [31:0] DMout
 );
     
-localparam MEM_SIZE = 4096;
+localparam MEM_SIZE = 1024;
 reg [31:0] dmem[MEM_SIZE-1:0];
 
 always @(posedge clk) begin
