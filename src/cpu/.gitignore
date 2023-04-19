@@ -1,2 +1,2 @@
-outputs/
+outputs/*
 simpleMIPS_tb.v
