@@ -5,7 +5,7 @@ module id (
   input [31:0] instr, ALUout, MEMout,
   input RegWr,
   input [1:0] WDSel, RDSel,
-  output [31:0] rdata1, rdata2, imm32
+  output [31:0] rdata1, rdata2
 );
 
 wire[4:0] rs =    instr`SEG_RS;
@@ -50,6 +50,5 @@ regfile rf(
   .rdata2(rdata2)
 );
 
-assign imm32 = {{14{imm[15]}}, imm[15:0]};
 
 endmodule

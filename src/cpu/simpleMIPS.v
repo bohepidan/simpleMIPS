@@ -6,6 +6,7 @@ module simpleMIPS (
 wire [31:0] pc_add4, instr;
 wire Br, J;
 wire [25:0] JImm = instr`SEG_ADDR;
+wire [31:0] rdata1, rdata2;
 fetch U_fetch(
   .rst(rst),
   .clk(clk),
@@ -13,13 +14,13 @@ fetch U_fetch(
   .J(J),
   .Imm(JImm),
   .instr(instr),
+  .rdata1(rdata1),
   .pc_add4(pc_add4)
 );
 
-wire [31:0] ALUout, MEMout, imm32;
+wire [31:0] ALUout, MEMout;
 wire [1:0] WDSel, RDSel;
 wire RegWr;
-wire [31:0] rdata1, rdata2;
 id U_id(
   .rst(rst),
   .clk(clk),
@@ -31,49 +32,53 @@ id U_id(
   .WDSel(WDSel),
   .RDSel(RDSel),
   .rdata1(rdata1),
-  .rdata2(rdata2),
-  .imm32(imm32)
+  .rdata2(rdata2)
 );
 
-wire Breq, Brlt;
+wire Breq, Brlt, Breqz, Brltz;
 bru U_bru(
   .rdata1(rdata1),
   .rdata2(rdata2),
   .Breq(Breq),
-  .Brlt(Brlt)
+  .Brlt(Brlt),
+  .Breqz(Breqz),
+  .Brltz(Brltz)
 );
 
-wire DMWr, BSel;
-wire [1:0] ALUOp;
+wire DMWr;
 ctrl U_ctrl(
   .instr(instr),
   .Breq(Breq),
   .Brlt(Brlt),
+  .Breqz(Breqz),
+  .Brltz(Brltz),
   .RegWr(RegWr),
   .DMWr(DMWr),
   .Br(Br),
   .J(J),
-  .BSel(BSel),
-  .ALUOp(ALUOp),
   .WDSel(WDSel),
   .RDSel(RDSel)
 );
   
+wire [2:0] mem_sel;
+wire [31:0] mem_addr, mem_wdata;
 ex U_ex(
-  .ALUOp(ALUOp),
+  .instr(instr),
   .rdata1(rdata1),
   .rdata2(rdata2),
-  .imm32(imm32),
-  .BSel(BSel),
-  .ALUout(ALUout)
+  .result(ALUout),
+  .mem_sel(mem_sel),
+  .mem_addr(mem_addr),
+  .mem_wdata(mem_wdata)
 );
 
 dm U_dm(
   .clk(clk),
-  .addr(ALUout),
-  .wdata(rdata2),
+  .addr(mem_addr),
+  .wdata(mem_wdata),
+  .mem_sel(mem_sel),
   .DMWr(DMWr),
-  .DMout(MEMout)
+  .rdata(MEMout)
 );
 
 endmodule

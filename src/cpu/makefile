@@ -4,16 +4,14 @@ SRCS=$(foreach dir,$(SRCDIRS),$(wildcard $(dir)*.v $(dir)*.vh))
 
 info: 
 	@echo Use make run
-	@echo $(SRCDIRS)
-	@echo $(SRCS)
 
-all: $(addprefix ./outputs/, $(OBJS))
+all: $(addprefix ../../testbench/cpu/outputs/, $(OBJS))
 
-run: link
-	./outputs/a.out
+%: %.o
+	../../testbench/cpu/outputs/$<
 
-link: $(SRCS)
-	iverilog -o ./outputs/a.out $^ 
+%.o: $(SRCS) ../../testbench/cpu/%.v
+	iverilog -o ../../testbench/cpu/outputs/$@ $^ 
 
 clean:
-	rm -f ./outputs/*.o
+	rm -f ../../testbench/cpu/outputs/*.o
