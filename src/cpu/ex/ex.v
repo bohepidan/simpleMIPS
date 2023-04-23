@@ -24,7 +24,7 @@ wire Ltype = (opcode == `OP_LW   || opcode == `OP_LB    || opcode == `OP_LH   ||
               opcode == `OP_LBU  || opcode == `OP_LHU);
 wire Jtype = (opcode == `OP_JAL  || opcode == `OP_J);
 
-assign mem_addr = rdata1 + $signed({{16{offset[15]}}, offset});
+assign mem_addr = rdata1 + $signed(offset);
 assign mem_wdata = rdata2;
 // mem_wdata, mem_sel
 always @(*) begin
