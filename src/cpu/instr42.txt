@@ -1,0 +1,486 @@
+iverilog -o ../../testbench/cpu/outputs/instr42.o ctrl.v bru.v simpleMIPS.v defs.vh fetch/im.v fetch/fetch.v fetch/reg_pc.v id/regfile.v id/id.v ex/ex.v mem/dm.v ../../testbench/cpu/instr42.v 
+../../testbench/cpu/outputs/instr42.o
+WARNING: ../../testbench/cpu/instr42.v:11: $readmemh: Standard inconsistency, following 1364-2005.
+WARNING: ../../testbench/cpu/instr42.v:11: $readmemh(../../testbench/cpu/mem/instr42.mem): Not enough words in the file for the requested range [0:1023].
+PC = 0xxxxxxxxX, IR = 0xxxxxxxxx, npc = 0xxxxxxxxx, regwr=x
+PC = 0x00003000, IR = 0x2008ffff, npc = 0x00000c01, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x00003004, IR = 0x34090000, npc = 0x00000c02, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x00003008, IR = 0x340a0001, npc = 0x00000c03, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x0000300c, IR = 0x34100000, npc = 0x00000c04, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x00003010, IR = 0x11090002, npc = 0x00000c05, regwr=0
+PC = 0x00003014, IR = 0x00000000, npc = 0x00000c06, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x00003018, IR = 0x22100001, npc = 0x00000c07, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x0000301c, IR = 0x11080002, npc = 0x00000c0a, regwr=0
+PC = 0x00003028, IR = 0x15090002, npc = 0x00000c0d, regwr=0
+PC = 0x00003034, IR = 0x15080002, npc = 0x00000c0e, regwr=0
+PC = 0x00003038, IR = 0x00000000, npc = 0x00000c0f, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000001, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x0000303c, IR = 0x22100002, npc = 0x00000c10, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000001, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x00003040, IR = 0x1d000002, npc = 0x00000c11, regwr=0
+PC = 0x00003044, IR = 0x00000000, npc = 0x00000c12, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000003, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x00003048, IR = 0x22100001, npc = 0x00000c13, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000003, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x0000304c, IR = 0x1d200002, npc = 0x00000c14, regwr=0
+PC = 0x00003050, IR = 0x00000000, npc = 0x00000c15, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000004, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x00003054, IR = 0x22100002, npc = 0x00000c16, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000004, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x00003058, IR = 0x1d400002, npc = 0x00000c19, regwr=0
+PC = 0x00003064, IR = 0x05010002, npc = 0x00000c1a, regwr=0
+PC = 0x00003068, IR = 0x00000000, npc = 0x00000c1b, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000006, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x0000306c, IR = 0x22100001, npc = 0x00000c1c, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000006, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x00003070, IR = 0x05210002, npc = 0x00000c1f, regwr=0
+PC = 0x0000307c, IR = 0x05410002, npc = 0x00000c22, regwr=0
+PC = 0x00003088, IR = 0x05000002, npc = 0x00000c25, regwr=0
+PC = 0x00003094, IR = 0x05200002, npc = 0x00000c26, regwr=0
+PC = 0x00003098, IR = 0x00000000, npc = 0x00000c27, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000007, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x0000309c, IR = 0x22100002, npc = 0x00000c28, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000007, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x000030a0, IR = 0x05400002, npc = 0x00000c29, regwr=0
+PC = 0x000030a4, IR = 0x00000000, npc = 0x00000c2a, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000009, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x000030a8, IR = 0x22100003, npc = 0x00000c2b, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=00000009, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x000030ac, IR = 0x19000002, npc = 0x00000c2e, regwr=0
+PC = 0x000030b8, IR = 0x19200002, npc = 0x00000c31, regwr=0
+PC = 0x000030c4, IR = 0x19400002, npc = 0x00000c32, regwr=0
+PC = 0x000030c8, IR = 0x00000000, npc = 0x00000c33, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=0000000c, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x000030cc, IR = 0x22100003, npc = 0x00000c34, regwr=1
+R[00-07]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[08-15]=ffffffff, 00000000, 00000001, 00000000, 00000000, 00000000, 00000000, 00000000
+R[16-23]=0000000c, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+R[24-31]=00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000, 00000000
+PC = 0x000030d0, IR = 0xxxxxxxxx, npc = 0x00000c35, regwr=x
+PC = 0x000030d4, IR = 0xxxxxxxxx, npc = 0x00000c36, regwr=x
+PC = 0x000030d8, IR = 0xxxxxxxxx, npc = 0x00000c37, regwr=x
+PC = 0x000030dc, IR = 0xxxxxxxxx, npc = 0x00000c38, regwr=x
+PC = 0x000030e0, IR = 0xxxxxxxxx, npc = 0x00000c39, regwr=x
+PC = 0x000030e4, IR = 0xxxxxxxxx, npc = 0x00000c3a, regwr=x
+PC = 0x000030e8, IR = 0xxxxxxxxx, npc = 0x00000c3b, regwr=x
+PC = 0x000030ec, IR = 0xxxxxxxxx, npc = 0x00000c3c, regwr=x
+PC = 0x000030f0, IR = 0xxxxxxxxx, npc = 0x00000c3d, regwr=x
+PC = 0x000030f4, IR = 0xxxxxxxxx, npc = 0x00000c3e, regwr=x
+PC = 0x000030f8, IR = 0xxxxxxxxx, npc = 0x00000c3f, regwr=x
+PC = 0x000030fc, IR = 0xxxxxxxxx, npc = 0x00000c40, regwr=x
+PC = 0x00003100, IR = 0xxxxxxxxx, npc = 0x00000c41, regwr=x
+PC = 0x00003104, IR = 0xxxxxxxxx, npc = 0x00000c42, regwr=x
+PC = 0x00003108, IR = 0xxxxxxxxx, npc = 0x00000c43, regwr=x
+PC = 0x0000310c, IR = 0xxxxxxxxx, npc = 0x00000c44, regwr=x
+PC = 0x00003110, IR = 0xxxxxxxxx, npc = 0x00000c45, regwr=x
+PC = 0x00003114, IR = 0xxxxxxxxx, npc = 0x00000c46, regwr=x
+PC = 0x00003118, IR = 0xxxxxxxxx, npc = 0x00000c47, regwr=x
+PC = 0x0000311c, IR = 0xxxxxxxxx, npc = 0x00000c48, regwr=x
+PC = 0x00003120, IR = 0xxxxxxxxx, npc = 0x00000c49, regwr=x
+PC = 0x00003124, IR = 0xxxxxxxxx, npc = 0x00000c4a, regwr=x
+PC = 0x00003128, IR = 0xxxxxxxxx, npc = 0x00000c4b, regwr=x
+PC = 0x0000312c, IR = 0xxxxxxxxx, npc = 0x00000c4c, regwr=x
+PC = 0x00003130, IR = 0xxxxxxxxx, npc = 0x00000c4d, regwr=x
+PC = 0x00003134, IR = 0xxxxxxxxx, npc = 0x00000c4e, regwr=x
+PC = 0x00003138, IR = 0xxxxxxxxx, npc = 0x00000c4f, regwr=x
+PC = 0x0000313c, IR = 0xxxxxxxxx, npc = 0x00000c50, regwr=x
+PC = 0x00003140, IR = 0xxxxxxxxx, npc = 0x00000c51, regwr=x
+PC = 0x00003144, IR = 0xxxxxxxxx, npc = 0x00000c52, regwr=x
+PC = 0x00003148, IR = 0xxxxxxxxx, npc = 0x00000c53, regwr=x
+PC = 0x0000314c, IR = 0xxxxxxxxx, npc = 0x00000c54, regwr=x
+PC = 0x00003150, IR = 0xxxxxxxxx, npc = 0x00000c55, regwr=x
+PC = 0x00003154, IR = 0xxxxxxxxx, npc = 0x00000c56, regwr=x
+PC = 0x00003158, IR = 0xxxxxxxxx, npc = 0x00000c57, regwr=x
+PC = 0x0000315c, IR = 0xxxxxxxxx, npc = 0x00000c58, regwr=x
+PC = 0x00003160, IR = 0xxxxxxxxx, npc = 0x00000c59, regwr=x
+PC = 0x00003164, IR = 0xxxxxxxxx, npc = 0x00000c5a, regwr=x
+PC = 0x00003168, IR = 0xxxxxxxxx, npc = 0x00000c5b, regwr=x
+PC = 0x0000316c, IR = 0xxxxxxxxx, npc = 0x00000c5c, regwr=x
+PC = 0x00003170, IR = 0xxxxxxxxx, npc = 0x00000c5d, regwr=x
+PC = 0x00003174, IR = 0xxxxxxxxx, npc = 0x00000c5e, regwr=x
+PC = 0x00003178, IR = 0xxxxxxxxx, npc = 0x00000c5f, regwr=x
+PC = 0x0000317c, IR = 0xxxxxxxxx, npc = 0x00000c60, regwr=x
+PC = 0x00003180, IR = 0xxxxxxxxx, npc = 0x00000c61, regwr=x
+PC = 0x00003184, IR = 0xxxxxxxxx, npc = 0x00000c62, regwr=x
+PC = 0x00003188, IR = 0xxxxxxxxx, npc = 0x00000c63, regwr=x
+PC = 0x0000318c, IR = 0xxxxxxxxx, npc = 0x00000c64, regwr=x
+PC = 0x00003190, IR = 0xxxxxxxxx, npc = 0x00000c65, regwr=x
+PC = 0x00003194, IR = 0xxxxxxxxx, npc = 0x00000c66, regwr=x
+PC = 0x00003198, IR = 0xxxxxxxxx, npc = 0x00000c67, regwr=x
+PC = 0x0000319c, IR = 0xxxxxxxxx, npc = 0x00000c68, regwr=x
+PC = 0x000031a0, IR = 0xxxxxxxxx, npc = 0x00000c69, regwr=x
+PC = 0x000031a4, IR = 0xxxxxxxxx, npc = 0x00000c6a, regwr=x
+PC = 0x000031a8, IR = 0xxxxxxxxx, npc = 0x00000c6b, regwr=x
+PC = 0x000031ac, IR = 0xxxxxxxxx, npc = 0x00000c6c, regwr=x
+PC = 0x000031b0, IR = 0xxxxxxxxx, npc = 0x00000c6d, regwr=x
+PC = 0x000031b4, IR = 0xxxxxxxxx, npc = 0x00000c6e, regwr=x
+PC = 0x000031b8, IR = 0xxxxxxxxx, npc = 0x00000c6f, regwr=x
+PC = 0x000031bc, IR = 0xxxxxxxxx, npc = 0x00000c70, regwr=x
+PC = 0x000031c0, IR = 0xxxxxxxxx, npc = 0x00000c71, regwr=x
+PC = 0x000031c4, IR = 0xxxxxxxxx, npc = 0x00000c72, regwr=x
+PC = 0x000031c8, IR = 0xxxxxxxxx, npc = 0x00000c73, regwr=x
+PC = 0x000031cc, IR = 0xxxxxxxxx, npc = 0x00000c74, regwr=x
+PC = 0x000031d0, IR = 0xxxxxxxxx, npc = 0x00000c75, regwr=x
+PC = 0x000031d4, IR = 0xxxxxxxxx, npc = 0x00000c76, regwr=x
+PC = 0x000031d8, IR = 0xxxxxxxxx, npc = 0x00000c77, regwr=x
+PC = 0x000031dc, IR = 0xxxxxxxxx, npc = 0x00000c78, regwr=x
+PC = 0x000031e0, IR = 0xxxxxxxxx, npc = 0x00000c79, regwr=x
+PC = 0x000031e4, IR = 0xxxxxxxxx, npc = 0x00000c7a, regwr=x
+PC = 0x000031e8, IR = 0xxxxxxxxx, npc = 0x00000c7b, regwr=x
+PC = 0x000031ec, IR = 0xxxxxxxxx, npc = 0x00000c7c, regwr=x
+PC = 0x000031f0, IR = 0xxxxxxxxx, npc = 0x00000c7d, regwr=x
+PC = 0x000031f4, IR = 0xxxxxxxxx, npc = 0x00000c7e, regwr=x
+PC = 0x000031f8, IR = 0xxxxxxxxx, npc = 0x00000c7f, regwr=x
+PC = 0x000031fc, IR = 0xxxxxxxxx, npc = 0x00000c80, regwr=x
+PC = 0x00003200, IR = 0xxxxxxxxx, npc = 0x00000c81, regwr=x
+PC = 0x00003204, IR = 0xxxxxxxxx, npc = 0x00000c82, regwr=x
+PC = 0x00003208, IR = 0xxxxxxxxx, npc = 0x00000c83, regwr=x
+PC = 0x0000320c, IR = 0xxxxxxxxx, npc = 0x00000c84, regwr=x
+PC = 0x00003210, IR = 0xxxxxxxxx, npc = 0x00000c85, regwr=x
+PC = 0x00003214, IR = 0xxxxxxxxx, npc = 0x00000c86, regwr=x
+PC = 0x00003218, IR = 0xxxxxxxxx, npc = 0x00000c87, regwr=x
+PC = 0x0000321c, IR = 0xxxxxxxxx, npc = 0x00000c88, regwr=x
+PC = 0x00003220, IR = 0xxxxxxxxx, npc = 0x00000c89, regwr=x
+PC = 0x00003224, IR = 0xxxxxxxxx, npc = 0x00000c8a, regwr=x
+PC = 0x00003228, IR = 0xxxxxxxxx, npc = 0x00000c8b, regwr=x
+PC = 0x0000322c, IR = 0xxxxxxxxx, npc = 0x00000c8c, regwr=x
+PC = 0x00003230, IR = 0xxxxxxxxx, npc = 0x00000c8d, regwr=x
+PC = 0x00003234, IR = 0xxxxxxxxx, npc = 0x00000c8e, regwr=x
+PC = 0x00003238, IR = 0xxxxxxxxx, npc = 0x00000c8f, regwr=x
+PC = 0x0000323c, IR = 0xxxxxxxxx, npc = 0x00000c90, regwr=x
+PC = 0x00003240, IR = 0xxxxxxxxx, npc = 0x00000c91, regwr=x
+PC = 0x00003244, IR = 0xxxxxxxxx, npc = 0x00000c92, regwr=x
+PC = 0x00003248, IR = 0xxxxxxxxx, npc = 0x00000c93, regwr=x
+PC = 0x0000324c, IR = 0xxxxxxxxx, npc = 0x00000c94, regwr=x
+PC = 0x00003250, IR = 0xxxxxxxxx, npc = 0x00000c95, regwr=x
+PC = 0x00003254, IR = 0xxxxxxxxx, npc = 0x00000c96, regwr=x
+PC = 0x00003258, IR = 0xxxxxxxxx, npc = 0x00000c97, regwr=x
+PC = 0x0000325c, IR = 0xxxxxxxxx, npc = 0x00000c98, regwr=x
+PC = 0x00003260, IR = 0xxxxxxxxx, npc = 0x00000c99, regwr=x
+PC = 0x00003264, IR = 0xxxxxxxxx, npc = 0x00000c9a, regwr=x
+PC = 0x00003268, IR = 0xxxxxxxxx, npc = 0x00000c9b, regwr=x
+PC = 0x0000326c, IR = 0xxxxxxxxx, npc = 0x00000c9c, regwr=x
+PC = 0x00003270, IR = 0xxxxxxxxx, npc = 0x00000c9d, regwr=x
+PC = 0x00003274, IR = 0xxxxxxxxx, npc = 0x00000c9e, regwr=x
+PC = 0x00003278, IR = 0xxxxxxxxx, npc = 0x00000c9f, regwr=x
+PC = 0x0000327c, IR = 0xxxxxxxxx, npc = 0x00000ca0, regwr=x
+PC = 0x00003280, IR = 0xxxxxxxxx, npc = 0x00000ca1, regwr=x
+PC = 0x00003284, IR = 0xxxxxxxxx, npc = 0x00000ca2, regwr=x
+PC = 0x00003288, IR = 0xxxxxxxxx, npc = 0x00000ca3, regwr=x
+PC = 0x0000328c, IR = 0xxxxxxxxx, npc = 0x00000ca4, regwr=x
+PC = 0x00003290, IR = 0xxxxxxxxx, npc = 0x00000ca5, regwr=x
+PC = 0x00003294, IR = 0xxxxxxxxx, npc = 0x00000ca6, regwr=x
+PC = 0x00003298, IR = 0xxxxxxxxx, npc = 0x00000ca7, regwr=x
+PC = 0x0000329c, IR = 0xxxxxxxxx, npc = 0x00000ca8, regwr=x
+PC = 0x000032a0, IR = 0xxxxxxxxx, npc = 0x00000ca9, regwr=x
+PC = 0x000032a4, IR = 0xxxxxxxxx, npc = 0x00000caa, regwr=x
+PC = 0x000032a8, IR = 0xxxxxxxxx, npc = 0x00000cab, regwr=x
+PC = 0x000032ac, IR = 0xxxxxxxxx, npc = 0x00000cac, regwr=x
+PC = 0x000032b0, IR = 0xxxxxxxxx, npc = 0x00000cad, regwr=x
+PC = 0x000032b4, IR = 0xxxxxxxxx, npc = 0x00000cae, regwr=x
+PC = 0x000032b8, IR = 0xxxxxxxxx, npc = 0x00000caf, regwr=x
+PC = 0x000032bc, IR = 0xxxxxxxxx, npc = 0x00000cb0, regwr=x
+PC = 0x000032c0, IR = 0xxxxxxxxx, npc = 0x00000cb1, regwr=x
+PC = 0x000032c4, IR = 0xxxxxxxxx, npc = 0x00000cb2, regwr=x
+PC = 0x000032c8, IR = 0xxxxxxxxx, npc = 0x00000cb3, regwr=x
+PC = 0x000032cc, IR = 0xxxxxxxxx, npc = 0x00000cb4, regwr=x
+PC = 0x000032d0, IR = 0xxxxxxxxx, npc = 0x00000cb5, regwr=x
+PC = 0x000032d4, IR = 0xxxxxxxxx, npc = 0x00000cb6, regwr=x
+PC = 0x000032d8, IR = 0xxxxxxxxx, npc = 0x00000cb7, regwr=x
+PC = 0x000032dc, IR = 0xxxxxxxxx, npc = 0x00000cb8, regwr=x
+PC = 0x000032e0, IR = 0xxxxxxxxx, npc = 0x00000cb9, regwr=x
+PC = 0x000032e4, IR = 0xxxxxxxxx, npc = 0x00000cba, regwr=x
+PC = 0x000032e8, IR = 0xxxxxxxxx, npc = 0x00000cbb, regwr=x
+PC = 0x000032ec, IR = 0xxxxxxxxx, npc = 0x00000cbc, regwr=x
+PC = 0x000032f0, IR = 0xxxxxxxxx, npc = 0x00000cbd, regwr=x
+PC = 0x000032f4, IR = 0xxxxxxxxx, npc = 0x00000cbe, regwr=x
+PC = 0x000032f8, IR = 0xxxxxxxxx, npc = 0x00000cbf, regwr=x
+PC = 0x000032fc, IR = 0xxxxxxxxx, npc = 0x00000cc0, regwr=x
+PC = 0x00003300, IR = 0xxxxxxxxx, npc = 0x00000cc1, regwr=x
+PC = 0x00003304, IR = 0xxxxxxxxx, npc = 0x00000cc2, regwr=x
+PC = 0x00003308, IR = 0xxxxxxxxx, npc = 0x00000cc3, regwr=x
+PC = 0x0000330c, IR = 0xxxxxxxxx, npc = 0x00000cc4, regwr=x
+PC = 0x00003310, IR = 0xxxxxxxxx, npc = 0x00000cc5, regwr=x
+PC = 0x00003314, IR = 0xxxxxxxxx, npc = 0x00000cc6, regwr=x
+PC = 0x00003318, IR = 0xxxxxxxxx, npc = 0x00000cc7, regwr=x
+PC = 0x0000331c, IR = 0xxxxxxxxx, npc = 0x00000cc8, regwr=x
+PC = 0x00003320, IR = 0xxxxxxxxx, npc = 0x00000cc9, regwr=x
+PC = 0x00003324, IR = 0xxxxxxxxx, npc = 0x00000cca, regwr=x
+PC = 0x00003328, IR = 0xxxxxxxxx, npc = 0x00000ccb, regwr=x
+PC = 0x0000332c, IR = 0xxxxxxxxx, npc = 0x00000ccc, regwr=x
+PC = 0x00003330, IR = 0xxxxxxxxx, npc = 0x00000ccd, regwr=x
+PC = 0x00003334, IR = 0xxxxxxxxx, npc = 0x00000cce, regwr=x
+PC = 0x00003338, IR = 0xxxxxxxxx, npc = 0x00000ccf, regwr=x
+PC = 0x0000333c, IR = 0xxxxxxxxx, npc = 0x00000cd0, regwr=x
+PC = 0x00003340, IR = 0xxxxxxxxx, npc = 0x00000cd1, regwr=x
+PC = 0x00003344, IR = 0xxxxxxxxx, npc = 0x00000cd2, regwr=x
+PC = 0x00003348, IR = 0xxxxxxxxx, npc = 0x00000cd3, regwr=x
+PC = 0x0000334c, IR = 0xxxxxxxxx, npc = 0x00000cd4, regwr=x
+PC = 0x00003350, IR = 0xxxxxxxxx, npc = 0x00000cd5, regwr=x
+PC = 0x00003354, IR = 0xxxxxxxxx, npc = 0x00000cd6, regwr=x
+PC = 0x00003358, IR = 0xxxxxxxxx, npc = 0x00000cd7, regwr=x
+PC = 0x0000335c, IR = 0xxxxxxxxx, npc = 0x00000cd8, regwr=x
+PC = 0x00003360, IR = 0xxxxxxxxx, npc = 0x00000cd9, regwr=x
+PC = 0x00003364, IR = 0xxxxxxxxx, npc = 0x00000cda, regwr=x
+PC = 0x00003368, IR = 0xxxxxxxxx, npc = 0x00000cdb, regwr=x
+PC = 0x0000336c, IR = 0xxxxxxxxx, npc = 0x00000cdc, regwr=x
+PC = 0x00003370, IR = 0xxxxxxxxx, npc = 0x00000cdd, regwr=x
+PC = 0x00003374, IR = 0xxxxxxxxx, npc = 0x00000cde, regwr=x
+PC = 0x00003378, IR = 0xxxxxxxxx, npc = 0x00000cdf, regwr=x
+PC = 0x0000337c, IR = 0xxxxxxxxx, npc = 0x00000ce0, regwr=x
+PC = 0x00003380, IR = 0xxxxxxxxx, npc = 0x00000ce1, regwr=x
+PC = 0x00003384, IR = 0xxxxxxxxx, npc = 0x00000ce2, regwr=x
+PC = 0x00003388, IR = 0xxxxxxxxx, npc = 0x00000ce3, regwr=x
+PC = 0x0000338c, IR = 0xxxxxxxxx, npc = 0x00000ce4, regwr=x
+PC = 0x00003390, IR = 0xxxxxxxxx, npc = 0x00000ce5, regwr=x
+PC = 0x00003394, IR = 0xxxxxxxxx, npc = 0x00000ce6, regwr=x
+PC = 0x00003398, IR = 0xxxxxxxxx, npc = 0x00000ce7, regwr=x
+PC = 0x0000339c, IR = 0xxxxxxxxx, npc = 0x00000ce8, regwr=x
+PC = 0x000033a0, IR = 0xxxxxxxxx, npc = 0x00000ce9, regwr=x
+PC = 0x000033a4, IR = 0xxxxxxxxx, npc = 0x00000cea, regwr=x
+PC = 0x000033a8, IR = 0xxxxxxxxx, npc = 0x00000ceb, regwr=x
+PC = 0x000033ac, IR = 0xxxxxxxxx, npc = 0x00000cec, regwr=x
+PC = 0x000033b0, IR = 0xxxxxxxxx, npc = 0x00000ced, regwr=x
+PC = 0x000033b4, IR = 0xxxxxxxxx, npc = 0x00000cee, regwr=x
+PC = 0x000033b8, IR = 0xxxxxxxxx, npc = 0x00000cef, regwr=x
+PC = 0x000033bc, IR = 0xxxxxxxxx, npc = 0x00000cf0, regwr=x
+PC = 0x000033c0, IR = 0xxxxxxxxx, npc = 0x00000cf1, regwr=x
+PC = 0x000033c4, IR = 0xxxxxxxxx, npc = 0x00000cf2, regwr=x
+PC = 0x000033c8, IR = 0xxxxxxxxx, npc = 0x00000cf3, regwr=x
+PC = 0x000033cc, IR = 0xxxxxxxxx, npc = 0x00000cf4, regwr=x
+PC = 0x000033d0, IR = 0xxxxxxxxx, npc = 0x00000cf5, regwr=x
+PC = 0x000033d4, IR = 0xxxxxxxxx, npc = 0x00000cf6, regwr=x
+PC = 0x000033d8, IR = 0xxxxxxxxx, npc = 0x00000cf7, regwr=x
+PC = 0x000033dc, IR = 0xxxxxxxxx, npc = 0x00000cf8, regwr=x
+PC = 0x000033e0, IR = 0xxxxxxxxx, npc = 0x00000cf9, regwr=x
+PC = 0x000033e4, IR = 0xxxxxxxxx, npc = 0x00000cfa, regwr=x
+PC = 0x000033e8, IR = 0xxxxxxxxx, npc = 0x00000cfb, regwr=x
+PC = 0x000033ec, IR = 0xxxxxxxxx, npc = 0x00000cfc, regwr=x
+PC = 0x000033f0, IR = 0xxxxxxxxx, npc = 0x00000cfd, regwr=x
+PC = 0x000033f4, IR = 0xxxxxxxxx, npc = 0x00000cfe, regwr=x
+PC = 0x000033f8, IR = 0xxxxxxxxx, npc = 0x00000cff, regwr=x
+PC = 0x000033fc, IR = 0xxxxxxxxx, npc = 0x00000d00, regwr=x
+PC = 0x00003400, IR = 0xxxxxxxxx, npc = 0x00000d01, regwr=x
+PC = 0x00003404, IR = 0xxxxxxxxx, npc = 0x00000d02, regwr=x
+PC = 0x00003408, IR = 0xxxxxxxxx, npc = 0x00000d03, regwr=x
+PC = 0x0000340c, IR = 0xxxxxxxxx, npc = 0x00000d04, regwr=x
+PC = 0x00003410, IR = 0xxxxxxxxx, npc = 0x00000d05, regwr=x
+PC = 0x00003414, IR = 0xxxxxxxxx, npc = 0x00000d06, regwr=x
+PC = 0x00003418, IR = 0xxxxxxxxx, npc = 0x00000d07, regwr=x
+PC = 0x0000341c, IR = 0xxxxxxxxx, npc = 0x00000d08, regwr=x
+PC = 0x00003420, IR = 0xxxxxxxxx, npc = 0x00000d09, regwr=x
+PC = 0x00003424, IR = 0xxxxxxxxx, npc = 0x00000d0a, regwr=x
+PC = 0x00003428, IR = 0xxxxxxxxx, npc = 0x00000d0b, regwr=x
+PC = 0x0000342c, IR = 0xxxxxxxxx, npc = 0x00000d0c, regwr=x
+PC = 0x00003430, IR = 0xxxxxxxxx, npc = 0x00000d0d, regwr=x
+PC = 0x00003434, IR = 0xxxxxxxxx, npc = 0x00000d0e, regwr=x
+PC = 0x00003438, IR = 0xxxxxxxxx, npc = 0x00000d0f, regwr=x
+PC = 0x0000343c, IR = 0xxxxxxxxx, npc = 0x00000d10, regwr=x
+PC = 0x00003440, IR = 0xxxxxxxxx, npc = 0x00000d11, regwr=x
+PC = 0x00003444, IR = 0xxxxxxxxx, npc = 0x00000d12, regwr=x
+PC = 0x00003448, IR = 0xxxxxxxxx, npc = 0x00000d13, regwr=x
+PC = 0x0000344c, IR = 0xxxxxxxxx, npc = 0x00000d14, regwr=x
+PC = 0x00003450, IR = 0xxxxxxxxx, npc = 0x00000d15, regwr=x
+PC = 0x00003454, IR = 0xxxxxxxxx, npc = 0x00000d16, regwr=x
+PC = 0x00003458, IR = 0xxxxxxxxx, npc = 0x00000d17, regwr=x
+PC = 0x0000345c, IR = 0xxxxxxxxx, npc = 0x00000d18, regwr=x
+PC = 0x00003460, IR = 0xxxxxxxxx, npc = 0x00000d19, regwr=x
+PC = 0x00003464, IR = 0xxxxxxxxx, npc = 0x00000d1a, regwr=x
+PC = 0x00003468, IR = 0xxxxxxxxx, npc = 0x00000d1b, regwr=x
+PC = 0x0000346c, IR = 0xxxxxxxxx, npc = 0x00000d1c, regwr=x
+PC = 0x00003470, IR = 0xxxxxxxxx, npc = 0x00000d1d, regwr=x
+PC = 0x00003474, IR = 0xxxxxxxxx, npc = 0x00000d1e, regwr=x
+PC = 0x00003478, IR = 0xxxxxxxxx, npc = 0x00000d1f, regwr=x
+PC = 0x0000347c, IR = 0xxxxxxxxx, npc = 0x00000d20, regwr=x
+PC = 0x00003480, IR = 0xxxxxxxxx, npc = 0x00000d21, regwr=x
+PC = 0x00003484, IR = 0xxxxxxxxx, npc = 0x00000d22, regwr=x
+PC = 0x00003488, IR = 0xxxxxxxxx, npc = 0x00000d23, regwr=x
+PC = 0x0000348c, IR = 0xxxxxxxxx, npc = 0x00000d24, regwr=x
+PC = 0x00003490, IR = 0xxxxxxxxx, npc = 0x00000d25, regwr=x
+PC = 0x00003494, IR = 0xxxxxxxxx, npc = 0x00000d26, regwr=x
+PC = 0x00003498, IR = 0xxxxxxxxx, npc = 0x00000d27, regwr=x
+PC = 0x0000349c, IR = 0xxxxxxxxx, npc = 0x00000d28, regwr=x
+PC = 0x000034a0, IR = 0xxxxxxxxx, npc = 0x00000d29, regwr=x
+PC = 0x000034a4, IR = 0xxxxxxxxx, npc = 0x00000d2a, regwr=x
+PC = 0x000034a8, IR = 0xxxxxxxxx, npc = 0x00000d2b, regwr=x
+PC = 0x000034ac, IR = 0xxxxxxxxx, npc = 0x00000d2c, regwr=x
+PC = 0x000034b0, IR = 0xxxxxxxxx, npc = 0x00000d2d, regwr=x
+PC = 0x000034b4, IR = 0xxxxxxxxx, npc = 0x00000d2e, regwr=x
+PC = 0x000034b8, IR = 0xxxxxxxxx, npc = 0x00000d2f, regwr=x
+PC = 0x000034bc, IR = 0xxxxxxxxx, npc = 0x00000d30, regwr=x
+PC = 0x000034c0, IR = 0xxxxxxxxx, npc = 0x00000d31, regwr=x
+PC = 0x000034c4, IR = 0xxxxxxxxx, npc = 0x00000d32, regwr=x
+PC = 0x000034c8, IR = 0xxxxxxxxx, npc = 0x00000d33, regwr=x
+PC = 0x000034cc, IR = 0xxxxxxxxx, npc = 0x00000d34, regwr=x
+PC = 0x000034d0, IR = 0xxxxxxxxx, npc = 0x00000d35, regwr=x
+PC = 0x000034d4, IR = 0xxxxxxxxx, npc = 0x00000d36, regwr=x
+PC = 0x000034d8, IR = 0xxxxxxxxx, npc = 0x00000d37, regwr=x
+PC = 0x000034dc, IR = 0xxxxxxxxx, npc = 0x00000d38, regwr=x
+PC = 0x000034e0, IR = 0xxxxxxxxx, npc = 0x00000d39, regwr=x
+PC = 0x000034e4, IR = 0xxxxxxxxx, npc = 0x00000d3a, regwr=x
+PC = 0x000034e8, IR = 0xxxxxxxxx, npc = 0x00000d3b, regwr=x
+PC = 0x000034ec, IR = 0xxxxxxxxx, npc = 0x00000d3c, regwr=x
+PC = 0x000034f0, IR = 0xxxxxxxxx, npc = 0x00000d3d, regwr=x
+PC = 0x000034f4, IR = 0xxxxxxxxx, npc = 0x00000d3e, regwr=x
+PC = 0x000034f8, IR = 0xxxxxxxxx, npc = 0x00000d3f, regwr=x
+PC = 0x000034fc, IR = 0xxxxxxxxx, npc = 0x00000d40, regwr=x
+PC = 0x00003500, IR = 0xxxxxxxxx, npc = 0x00000d41, regwr=x
+PC = 0x00003504, IR = 0xxxxxxxxx, npc = 0x00000d42, regwr=x
+PC = 0x00003508, IR = 0xxxxxxxxx, npc = 0x00000d43, regwr=x
+PC = 0x0000350c, IR = 0xxxxxxxxx, npc = 0x00000d44, regwr=x
+PC = 0x00003510, IR = 0xxxxxxxxx, npc = 0x00000d45, regwr=x
+PC = 0x00003514, IR = 0xxxxxxxxx, npc = 0x00000d46, regwr=x
+PC = 0x00003518, IR = 0xxxxxxxxx, npc = 0x00000d47, regwr=x
+PC = 0x0000351c, IR = 0xxxxxxxxx, npc = 0x00000d48, regwr=x
+PC = 0x00003520, IR = 0xxxxxxxxx, npc = 0x00000d49, regwr=x
+PC = 0x00003524, IR = 0xxxxxxxxx, npc = 0x00000d4a, regwr=x
+PC = 0x00003528, IR = 0xxxxxxxxx, npc = 0x00000d4b, regwr=x
+PC = 0x0000352c, IR = 0xxxxxxxxx, npc = 0x00000d4c, regwr=x
+PC = 0x00003530, IR = 0xxxxxxxxx, npc = 0x00000d4d, regwr=x
+PC = 0x00003534, IR = 0xxxxxxxxx, npc = 0x00000d4e, regwr=x
+PC = 0x00003538, IR = 0xxxxxxxxx, npc = 0x00000d4f, regwr=x
+PC = 0x0000353c, IR = 0xxxxxxxxx, npc = 0x00000d50, regwr=x
+PC = 0x00003540, IR = 0xxxxxxxxx, npc = 0x00000d51, regwr=x
+PC = 0x00003544, IR = 0xxxxxxxxx, npc = 0x00000d52, regwr=x
+PC = 0x00003548, IR = 0xxxxxxxxx, npc = 0x00000d53, regwr=x
+PC = 0x0000354c, IR = 0xxxxxxxxx, npc = 0x00000d54, regwr=x
+PC = 0x00003550, IR = 0xxxxxxxxx, npc = 0x00000d55, regwr=x
+PC = 0x00003554, IR = 0xxxxxxxxx, npc = 0x00000d56, regwr=x
+PC = 0x00003558, IR = 0xxxxxxxxx, npc = 0x00000d57, regwr=x
+PC = 0x0000355c, IR = 0xxxxxxxxx, npc = 0x00000d58, regwr=x
+PC = 0x00003560, IR = 0xxxxxxxxx, npc = 0x00000d59, regwr=x
+PC = 0x00003564, IR = 0xxxxxxxxx, npc = 0x00000d5a, regwr=x
+PC = 0x00003568, IR = 0xxxxxxxxx, npc = 0x00000d5b, regwr=x
+PC = 0x0000356c, IR = 0xxxxxxxxx, npc = 0x00000d5c, regwr=x
+PC = 0x00003570, IR = 0xxxxxxxxx, npc = 0x00000d5d, regwr=x
+PC = 0x00003574, IR = 0xxxxxxxxx, npc = 0x00000d5e, regwr=x
+PC = 0x00003578, IR = 0xxxxxxxxx, npc = 0x00000d5f, regwr=x
+PC = 0x0000357c, IR = 0xxxxxxxxx, npc = 0x00000d60, regwr=x
+PC = 0x00003580, IR = 0xxxxxxxxx, npc = 0x00000d61, regwr=x
+PC = 0x00003584, IR = 0xxxxxxxxx, npc = 0x00000d62, regwr=x
+PC = 0x00003588, IR = 0xxxxxxxxx, npc = 0x00000d63, regwr=x
+PC = 0x0000358c, IR = 0xxxxxxxxx, npc = 0x00000d64, regwr=x
+PC = 0x00003590, IR = 0xxxxxxxxx, npc = 0x00000d65, regwr=x
+PC = 0x00003594, IR = 0xxxxxxxxx, npc = 0x00000d66, regwr=x
+PC = 0x00003598, IR = 0xxxxxxxxx, npc = 0x00000d67, regwr=x
+PC = 0x0000359c, IR = 0xxxxxxxxx, npc = 0x00000d68, regwr=x
+PC = 0x000035a0, IR = 0xxxxxxxxx, npc = 0x00000d69, regwr=x
+PC = 0x000035a4, IR = 0xxxxxxxxx, npc = 0x00000d6a, regwr=x
+PC = 0x000035a8, IR = 0xxxxxxxxx, npc = 0x00000d6b, regwr=x
+PC = 0x000035ac, IR = 0xxxxxxxxx, npc = 0x00000d6c, regwr=x
+PC = 0x000035b0, IR = 0xxxxxxxxx, npc = 0x00000d6d, regwr=x
+PC = 0x000035b4, IR = 0xxxxxxxxx, npc = 0x00000d6e, regwr=x
+PC = 0x000035b8, IR = 0xxxxxxxxx, npc = 0x00000d6f, regwr=x
+PC = 0x000035bc, IR = 0xxxxxxxxx, npc = 0x00000d70, regwr=x
+PC = 0x000035c0, IR = 0xxxxxxxxx, npc = 0x00000d71, regwr=x
+PC = 0x000035c4, IR = 0xxxxxxxxx, npc = 0x00000d72, regwr=x
+PC = 0x000035c8, IR = 0xxxxxxxxx, npc = 0x00000d73, regwr=x
+PC = 0x000035cc, IR = 0xxxxxxxxx, npc = 0x00000d74, regwr=x
+PC = 0x000035d0, IR = 0xxxxxxxxx, npc = 0x00000d75, regwr=x
+PC = 0x000035d4, IR = 0xxxxxxxxx, npc = 0x00000d76, regwr=x
+PC = 0x000035d8, IR = 0xxxxxxxxx, npc = 0x00000d77, regwr=x
+PC = 0x000035dc, IR = 0xxxxxxxxx, npc = 0x00000d78, regwr=x
+PC = 0x000035e0, IR = 0xxxxxxxxx, npc = 0x00000d79, regwr=x
+PC = 0x000035e4, IR = 0xxxxxxxxx, npc = 0x00000d7a, regwr=x
+PC = 0x000035e8, IR = 0xxxxxxxxx, npc = 0x00000d7b, regwr=x
+PC = 0x000035ec, IR = 0xxxxxxxxx, npc = 0x00000d7c, regwr=x
+PC = 0x000035f0, IR = 0xxxxxxxxx, npc = 0x00000d7d, regwr=x
+PC = 0x000035f4, IR = 0xxxxxxxxx, npc = 0x00000d7e, regwr=x
+PC = 0x000035f8, IR = 0xxxxxxxxx, npc = 0x00000d7f, regwr=x
+PC = 0x000035fc, IR = 0xxxxxxxxx, npc = 0x00000d80, regwr=x
+PC = 0x00003600, IR = 0xxxxxxxxx, npc = 0x00000d81, regwr=x
+PC = 0x00003604, IR = 0xxxxxxxxx, npc = 0x00000d82, regwr=x
+PC = 0x00003608, IR = 0xxxxxxxxx, npc = 0x00000d83, regwr=x
+PC = 0x0000360c, IR = 0xxxxxxxxx, npc = 0x00000d84, regwr=x
+PC = 0x00003610, IR = 0xxxxxxxxx, npc = 0x00000d85, regwr=x
+PC = 0x00003614, IR = 0xxxxxxxxx, npc = 0x00000d86, regwr=x
+PC = 0x00003618, IR = 0xxxxxxxxx, npc = 0x00000d87, regwr=x
+PC = 0x0000361c, IR = 0xxxxxxxxx, npc = 0x00000d88, regwr=x
+PC = 0x00003620, IR = 0xxxxxxxxx, npc = 0x00000d89, regwr=x
+PC = 0x00003624, IR = 0xxxxxxxxx, npc = 0x00000d8a, regwr=x
+PC = 0x00003628, IR = 0xxxxxxxxx, npc = 0x00000d8b, regwr=x
+PC = 0x0000362c, IR = 0xxxxxxxxx, npc = 0x00000d8c, regwr=x
+PC = 0x00003630, IR = 0xxxxxxxxx, npc = 0x00000d8d, regwr=x
+PC = 0x00003634, IR = 0xxxxxxxxx, npc = 0x00000d8e, regwr=x
+PC = 0x00003638, IR = 0xxxxxxxxx, npc = 0x00000d8f, regwr=x
+PC = 0x0000363c, IR = 0xxxxxxxxx, npc = 0x00000d90, regwr=x
+PC = 0x00003640, IR = 0xxxxxxxxx, npc = 0x00000d91, regwr=x
+PC = 0x00003644, IR = 0xxxxxxxxx, npc = 0x00000d92, regwr=x
+PC = 0x00003648, IR = 0xxxxxxxxx, npc = 0x00000d93, regwr=x
+PC = 0x0000364c, IR = 0xxxxxxxxx, npc = 0x00000d94, regwr=x
+PC = 0x00003650, IR = 0xxxxxxxxx, npc = 0x00000d95, regwr=x
+PC = 0x00003654, IR = 0xxxxxxxxx, npc = 0x00000d96, regwr=x
+PC = 0x00003658, IR = 0xxxxxxxxx, npc = 0x00000d97, regwr=x
+PC = 0x0000365c, IR = 0xxxxxxxxx, npc = 0x00000d98, regwr=x
+PC = 0x00003660, IR = 0xxxxxxxxx, npc = 0x00000d99, regwr=x
+PC = 0x00003664, IR = 0xxxxxxxxx, npc = 0x00000d9a, regwr=x
+PC = 0x00003668, IR = 0xxxxxxxxx, npc = 0x00000d9b, regwr=x
+PC = 0x0000366c, IR = 0xxxxxxxxx, npc = 0x00000d9c, regwr=x
+PC = 0x00003670, IR = 0xxxxxxxxx, npc = 0x00000d9d, regwr=x
+PC = 0x00003674, IR = 0xxxxxxxxx, npc = 0x00000d9e, regwr=x
+PC = 0x00003678, IR = 0xxxxxxxxx, npc = 0x00000d9f, regwr=x
+PC = 0x0000367c, IR = 0xxxxxxxxx, npc = 0x00000da0, regwr=x
+PC = 0x00003680, IR = 0xxxxxxxxx, npc = 0x00000da1, regwr=x

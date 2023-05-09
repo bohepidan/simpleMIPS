@@ -1,11 +1,9 @@
 SRCDIRS=./ fetch/ id/ ex/ mem/
-
+TESTFILES= $(notdir $(basename $(wildcard ../../testbench/cpu/*.v)))
 SRCS=$(foreach dir,$(SRCDIRS),$(wildcard $(dir)*.v $(dir)*.vh))
 
 info: 
-	@echo Use make run
-
-all: $(addprefix ../../testbench/cpu/outputs/, $(OBJS))
+	@echo Try make $(TESTFILES)
 
 %: %.o
 	../../testbench/cpu/outputs/$<

@@ -40,7 +40,7 @@ end
 
 regfile rf(
   .clk(clk),
-  .rst,
+  .rst(),
   .RegWr(RegWr),
   .rs1(rs),
   .rs2(rt),

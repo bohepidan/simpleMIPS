@@ -11,6 +11,6 @@ assign Brlt = $signed(rdata1) < $signed(rdata2);
 
 assign Breqz = rdata1 == 32'b0;
 
-assign Brltz = $signed(rdata1) < 32'b0;
+assign Brltz = $signed(rdata1) < $signed(32'b0);
   
 endmodule

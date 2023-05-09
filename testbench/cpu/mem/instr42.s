@@ -16,9 +16,10 @@
 # Settings -> Memory Configuration -> Compact, Data at address 0
 
 .data
-.globl array cnt
+.globl array
 array:
 	.word 0:16	# array of 16 words
+.globl cnt
 cnt:
 	.word 0		# counter of Branch
 .text

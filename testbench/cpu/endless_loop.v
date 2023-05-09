@@ -16,7 +16,7 @@ initial begin
   rst = 1 ;
   #20 ;
   rst = 0 ;
-  for(i=0; i<200; i++)
+  for(i=0; i<200; i=i+1)
     #(50) clk = ~clk;
   
   if(U_simpleMIPS.U_fetch.instr == 32'hafa6fffc ||
